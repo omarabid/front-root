@@ -1,14 +1,15 @@
 import * as React from "react";
 import { Component } from "react";
 import { Router, Link } from "@reach/router";
+import { Root, Routes } from 'react-static'
 
 import Home from "./pages/home";
-import Profile from "./pages/profile";
 import Contact from "./pages/contact";
 
 class App extends Component {
   render() {
     return(
+        <Root>
       <div className="App">
           <div className="container">
               <div className="row">
@@ -26,11 +27,12 @@ class App extends Component {
 
           <Router>
               <Home path="/"/>
-              <Profile path="profile" />
               <Contact path="contact" />
+              <Routes path="*" />
           </Router>
 
       </div>
+            </Root>
     );
   }
 }
