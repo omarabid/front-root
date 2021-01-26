@@ -5,6 +5,7 @@ import { Root, Routes } from 'react-static'
 
 import Home from "./pages/home";
 import Contact from "./pages/contact";
+import Profile from "./pages/profile";
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
           <Router>
               <Home path="/"/>
               <Contact path="contact" />
+              <Profile path="profile" />
               <Routes path="*" />
           </Router>
 

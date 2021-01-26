@@ -1,4 +1,3 @@
-// TODO: documentation
 const { watch, series, parallel, src, dest } = require('gulp');
 const clean_css = require('gulp-clean-css');
 const concat = require('gulp-concat');
